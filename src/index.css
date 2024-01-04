@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* variables for colors */
+/* colors provided by the city of san antonio texas: https://www.sa.gov/Design/Getting-Started/Toolkits/Brand-Toolkit/Colors */
+:root {
+  --primary-corazon-red: #8B0E04;
+    --primary-mission-bell-gray: #333333;
+    --primary-pecan-brown: #551900;
+    --primary-mercado-rose: #CF4240;
+    --primary-riverwalk-teal: #038391;
+    --secondary-pearl-white: #EEEEEE;
+    --secondary-rio-blue: #A1CBC9;
+    --secondary-nopales-green: #068460;
+    --secondary-fiesta-gold: #F7D002;
+    --secondary-concha-pink: #E00490;
 }
