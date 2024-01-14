@@ -8,57 +8,6 @@
 
 }
 
-.marque-plate {
-    background-image: url("./assets/images/judah-estrada-r-UmxKDGKPs-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    height: 100vh;
-    padding-top: 0px;
-    margin-top: 0px;
-    filter: blur(0px); /*todo: get rid of the white blurred edges?*/
-}
-
-.marque-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
-    padding-top: 0px;
-    margin-top: 0px;
-    background-color: black;
-    opacity: 0.75;
-}
-
-.hover-container {
-    z-index: 3;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hover-container h1 {
-    font-size: 50px;
-    font-weight: 700;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-.hover-container p {
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
 .App {
     /* create black and blue gradient background */
     /* background: linear-gradient(120deg, #000000 10%, #5e2712 110%); */
