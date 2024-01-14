@@ -23,4 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 #environment
-./src/env
+src/env/*
+src/env/client*
+
+/src/env/*
+/src/env/client*
