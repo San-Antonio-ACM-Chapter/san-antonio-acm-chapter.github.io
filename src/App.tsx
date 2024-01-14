@@ -1,8 +1,18 @@
 import React from 'react';
 import './App.css';
+import { GoogleLogin } from '@react-oauth/google';
 
 function App() {
     const imageSource = 'https://live.staticflickr.com/5517/12213224246_a9d49f83d8_b.jpg';
+    const responseMessage = (response: any) => {
+        console.log(response);
+    }
+
+    const errorMessage = () => {
+        console.log('error');
+    }
+
+    const [showGoogleLogin, setShowGoogleLogin] = React.useState(false);
   return (
       <div className="App">
           <style>
@@ -32,7 +42,8 @@ function App() {
                     <a href={"#get-involved"}>Get Involved</a>
                 </span>
 
-                <a className="App-login" href={"#login"}>Login</a>
+                <a className="App-login" href={"#login"} onClick={() => {setShowGoogleLogin(!showGoogleLogin)}}>Login</a>
+                {showGoogleLogin ? <GoogleLogin onSuccess={responseMessage} onError={errorMessage} /> : null }
             </span>
           </div>
           <section className={'App-home-section'}>
