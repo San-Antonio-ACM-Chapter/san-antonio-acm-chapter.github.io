@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*hide the scrollbars*/
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
 .marque-plate {
     background-image: url("./assets/images/judah-estrada-r-UmxKDGKPs-unsplash.jpg");
     background-size: cover;
@@ -47,4 +57,63 @@
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+}
+
+.App {
+    /* create black and blue gradient background */
+    /* background: linear-gradient(120deg, #000000 10%, #5e2712 110%); */
+    background: radial-gradient(farthest-corner at 40px 40px, rgb(19, 79, 108) 50%, rgb(51, 10, 114) 80%, rgb(15, 84, 49) 100%);
+    min-height: 100vh;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+    font-size: x-large;
+    font-weight: 300;
+    transition: 0.25s;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    color: #07ffb5;
+    text-decoration: none;
+    align-self: center;
+    font-size: x-large;
+    transition: 0.25s;
+}
+
+.App-login {
+    color: #07ffb5;
+    text-decoration: none;
+    align-self: center;
+    font-size: x-large;
+    font-weight: 300;
+    transition: 0.25s;
+    font-family: 'Roboto', sans-serif;
+    background-color: #07ffb5;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid #07ffb5;
+}
+
+.App-login:hover{
+    color: #000;
+    text-decoration: none;
+    align-self: center;
+    font-size: x-large;
+    transition: 0.25s;
+    border: 2px solid transparent;
+    background-color: #07ffb5;
+}
+
+.App-home-section{
+    content: "";
+    background: linear-gradient(130deg, #ffffff 0%, rgba(255, 255, 255, 0.11) 110%);
+    width: 100vw;
+    height: 300px
 }

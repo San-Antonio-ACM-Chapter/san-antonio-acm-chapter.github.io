@@ -1,35 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import NavigationHeader from './assets/Components/organisms/NavigationHeader/NavigationHeader';
 
 function App() {
+    const imageSource = 'https://live.staticflickr.com/5517/12213224246_a9d49f83d8_b.jpg';
   return (
       <div className="App">
-          <NavigationHeader/>
-          <div className={"marque-plate"}>
-              <div className={"marque-container"}/>
+          <style>
+              @import
+              url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+          </style>
+          <div style={{height: '75px',
+              alignContent: 'center',
+          }}>
+            <span style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: "space-between",
+                marginLeft: 30,
+                marginRight: 30,
+                textAlign: 'center',
+                alignContent: 'center',
+                paddingTop: 10,
+            }}>
+                <h2 style={{color: 'white', fontFamily: 'Roboto', alignSelf: 'center'}}>
+                    ACM San Antonio
+                </h2>
+                <span style={{minWidth: '40%', maxWidth: '40%', display: "flex", flexDirection: "row", justifyContent: 'space-between'}}>
+                    <a href={"#home"}>Home</a>
+                    <a href={"#about"}>About</a>
+                    <a href={"#projects"}>Projects</a>
+                    <a href={"#get-involved"}>Get Involved</a>
+                </span>
 
+                <a className="App-login" href={"#login"}>Login</a>
+            </span>
           </div>
-          <div className={"hover-container"}>
-              <h1>Software Engineering ACM San Antonio</h1>
-              <p>under construction</p>
-          </div>
-          <section>
-              <div>
-                  <h2>What is ACM?</h2>
-                  <p>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-              </div>
-          </section>
-          <section>
-              <div>
-                  <h2>Sponsors</h2>
-                  <p>
-                      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-              </div>
+          <section className={'App-home-section'}>
           </section>
       </div>
   );
