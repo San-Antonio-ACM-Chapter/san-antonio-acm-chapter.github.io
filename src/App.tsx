@@ -36,6 +36,7 @@ function App() {
             </span>
           </div>
           <section className={'App-home-section'}>
+
           </section>
       </div>
   );
