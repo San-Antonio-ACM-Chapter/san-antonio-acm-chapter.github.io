@@ -1,0 +1,59 @@
+.container {
+    background-color: #08183f;
+    height: 80px;
+    padding-top: 5px;
+    align-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: 1s;
+}
+
+/* media query for anything bigger than 1300px */
+@media (min-width: 1600px) {
+    .container {
+        width: 66%;
+        transition: 1s;
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+}
+
+.spanContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    height: 100%;
+}
+
+.headerMainText {
+    color: white;
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link{
+    color: white;
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    font-size: 1.5em;
+    align-self: center;
+    text-decoration: none;
+    transition: 1s;
+    margin-right: 25px;
+}
+
+.link:hover {
+    color: #00b0ff; /* I really like this color */
+    font-weight: 100;
+    transition: 1s;
+}

@@ -1,0 +1,43 @@
+.container {
+    background-color: #01091a;
+    padding: 30px;
+    padding-top: 5px;
+    align-content: center;
+    width: 92%;
+    margin: auto;
+    transition: 1s;
+}
+
+/* media query for anything bigger than 1600px */
+@media (min-width: 1600px) {
+    .container {
+        width: 66%;
+        transition: 1s;
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+}
+
+.containerHeader {
+    color: white;
+    margin-top: 20px;
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.containerParagraph {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: "EB Garamond", sans-serif;
+    font-size: large;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 50%;
+    padding-bottom: 0;
+    transition: 1s;
+}

@@ -1,0 +1,101 @@
+.cardContainer {
+    background-color: white;
+    width: 92%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+}
+
+/*media query for anything bigger than 1300px*/
+@media (min-width: 1600px) {
+    .cardContainer {
+        width: 65%;
+    }
+}
+
+.noteContainer {
+    position: absolute;
+    background-color: #e8f4fc;
+    height: 290px;
+    width: 400px;
+    bottom: -50px;
+    right: 60px;
+    transition: 1s;
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 30px 30px 0 0;
+}
+
+
+.noteContainer:hover {
+    height: 330px;
+    /* drop shadow */
+    box-shadow: 10px 10px 2px 0px rgb(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.noteText {
+    font-family: 'EB Garamond';
+    font-size: 1.2em;
+    line-height: 30px;
+    text-indent: 3ch;
+    /* disable highlight */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes fadeInOutAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* this card image should have styleing that makes it fade to white on the right side */
+.cardImage {
+    animation: fadeInOutAnimation 10s infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
+}
+
+.cardImageContainer {
+    transition: 1s;
+    width: 80%;
+    overflow: hidden;
+}
+
+
+.cardImageCover {
+    /* gradient from transparent to white LEFT to RIGHT */
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    /* gradient from transparent to white LEFT to RIGHT */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255,255,255,1), rgba(255, 255, 255, 1));
+    transition: 1s;
+}
+
+.cardTitle {
+    font-family: 'EB Garamond';
+    color: #08183f;
+    font-size: 5em;
+    font-weight: bold;
+    margin: 20px;
+    transition: 1s;
+    position: absolute;
+    top: 206px;
+    left: 0;
+}

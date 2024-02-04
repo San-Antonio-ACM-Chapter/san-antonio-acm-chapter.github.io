@@ -1,0 +1,8 @@
+.contentBreakContainer {
+    content : "";
+    background: #08183f;
+    width: 100%;
+    height: 20px;
+    transition: 1s;
+    z-index: 1000;
+}
