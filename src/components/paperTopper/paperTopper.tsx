@@ -32,15 +32,6 @@ const PaperTopper = (props: PaperTopperProps) => {
         cardImage?.setAttribute('src', imageSources[imageIndex]);
     }
 
-
-    //this seems to be happning before the querySelector is able to find the element... so it's null
-    //why is this happening?
-    //I think it's because the component is being rendered before the querySelector is able to find the element
-    //how can i fix this?
-    //I think I can use a useEffect hook to run the querySelector after the component is rendered
-    //wait ... i can do that??
-    //I think so
-
     useEffect(() => {
         cardImage = document.querySelector(`.${styles.cardImage}`);
         console.log(cardImage);
