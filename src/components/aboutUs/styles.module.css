@@ -6,6 +6,7 @@
     width: 92%;
     margin: auto;
     transition: 1s;
+    height: 300px;
 }
 
 /* media query for anything bigger than 1600px */

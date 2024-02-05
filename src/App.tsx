@@ -8,6 +8,7 @@ import PaperTopper from "./components/paperTopper/paperTopper";
 import ContentBreak from "./components/contentBreak/contentBreak";
 import AboutUsSection from "./components/aboutUs/aboutUs";
 import EventsSection from "./components/Events/eventsSection";
+import ContactSection from "./components/contact/contactSection";
 
 function App() {
     const imageSource = 'https://live.staticflickr.com/5517/12213224246_a9d49f83d8_b.jpg';
@@ -44,12 +45,17 @@ function App() {
                 <ContentBreak/>
                 {/*<PaperTopper showNote={false} backgroundColor={"#0c2767"} height={500}/>*/}
                 <section id={"about"}>
-                <AboutUsSection />
+                    <AboutUsSection />
                 </section>
                 <ContentBreak/>
                 <section id={"events"}>
                     <EventsSection />
                 </section>
+                <ContentBreak/>
+                <section id={"contact"}>
+                    <ContactSection/>
+                </section>
+                <ContentBreak/>
             </div>
         </>
     );
