@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import {LoremIpsum} from "../../App";
+import {loremIpsum as LoremIpsum} from "../../tools/tools";
 
 interface PaperTopperProps {
     showNote: boolean;

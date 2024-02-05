@@ -1,6 +1,6 @@
 import React from 'react';
-
 import styles from './styles.module.css';
+import {ContactUsIcons} from "../../tools/tools";
 
 const discordInviteURL = "https://discord.gg/MfBkbGhKH2";
 
@@ -11,23 +11,23 @@ const ContactSection = () => {
             <span>
             {/* discord icon */}
             <a href={discordInviteURL} target="_blank" rel="noreferrer">
-                <img src="https://img.icons8.com/color/48/000000/discord-logo.png" alt="discord logo"/>
+                <img src={ContactUsIcons.DISCORD_LARGE} alt="discord logo"/>
             </a>
             {/* email icon */}
             <a href="#" target="_blank" rel="noreferrer">
-                <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="email logo"/>
+                <img src={ContactUsIcons.EMAIL_LARGE} alt="email logo"/>
             </a>
             {/* facebook icon */}
             <a href="#" target="_blank" rel="noreferrer">
-                <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="facebook logo"/>
+                <img src={ContactUsIcons.FACEBOOK_LARGE} alt="facebook logo"/>
             </a>
             {/* twitter icon */}
             <a href="#" target="_blank" rel="noreferrer">
-                <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="twitter logo"/>
+                <img src={ContactUsIcons.TWITTER_LARGE} alt="twitter logo"/>
             </a>
             {/* instagram icon */}
             <a href="#" target="_blank" rel="noreferrer">
-                <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="instagram logo"/>
+                <img src={ContactUsIcons.INSTAGRAM_LARGE} alt="instagram logo"/>
             </a>
         </span>
         </div>
