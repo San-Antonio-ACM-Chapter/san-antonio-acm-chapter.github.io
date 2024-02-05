@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './styles.module.css';
 import {loremIpsum as LoremIpsum} from "../../tools/tools";
 
@@ -23,18 +23,32 @@ const PaperTopper = (props: PaperTopperProps) => {
         "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/san-antonio-texas-downtown-city-skyline-on-the-water-black-and-white-gregory-ballos.jpg",
     ]
 
+    let cardImage : Element | null = null;
+
+
     //change image should change the image every
     const changeImage = () => {
         imageIndex = (imageIndex + 1) % imageSources.length;
         cardImage?.setAttribute('src', imageSources[imageIndex]);
     }
 
-    const cardImage = document.querySelector(`.${styles.cardImage}`);
-    console.log(cardImage);
-    cardImage?.addEventListener('animationiteration', () => {
-        console.log('animation ended');
-        changeImage();
-    });
+
+    //this seems to be happning before the querySelector is able to find the element... so it's null
+    //why is this happening?
+    //I think it's because the component is being rendered before the querySelector is able to find the element
+    //how can i fix this?
+    //I think I can use a useEffect hook to run the querySelector after the component is rendered
+    //wait ... i can do that??
+    //I think so
+
+    useEffect(() => {
+        cardImage = document.querySelector(`.${styles.cardImage}`);
+        console.log(cardImage);
+        cardImage?.addEventListener('animationiteration', () => {
+            console.log('animation ended');
+            changeImage();
+        });
+    }, []);
 
 
     return (
