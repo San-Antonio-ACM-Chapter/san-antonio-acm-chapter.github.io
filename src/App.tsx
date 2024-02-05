@@ -56,6 +56,16 @@ function App() {
                     <ContactSection/>
                 </section>
                 <ContentBreak/>
+                <section id={"getInvolved"}>
+
+                </section>
+                <ContentBreak/>
+                <section id={"sponsors"}>
+                </section>
+                <ContentBreak/>
+                <footer>
+
+                </footer>
             </div>
         </>
     );
