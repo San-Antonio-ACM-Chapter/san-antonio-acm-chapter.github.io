@@ -14,22 +14,22 @@ const ContactSection = () => {
             <a href={discordInviteURL} target="_blank" rel="noreferrer">
                 <img src={ContactUsIcons.DISCORD_LARGE} alt="discord logo"/>
             </a>
-            {/* email icon */}
-            <a href="#" target="_blank" rel="noreferrer">
-                <img src={ContactUsIcons.EMAIL_LARGE} alt="email logo"/>
-            </a>
-            {/* facebook icon */}
-            <a href="#" target="_blank" rel="noreferrer">
-                <img src={ContactUsIcons.FACEBOOK_LARGE} alt="facebook logo"/>
-            </a>
-            {/* twitter icon */}
-            <a href="#" target="_blank" rel="noreferrer">
-                <img src={ContactUsIcons.TWITTER_LARGE} alt="twitter logo"/>
-            </a>
-            {/* instagram icon */}
-            <a href="#" target="_blank" rel="noreferrer">
-                <img src={ContactUsIcons.INSTAGRAM_LARGE} alt="instagram logo"/>
-            </a>
+            {/*/!* email icon *!/*/}
+            {/*<a href="#" target="_blank" rel="noreferrer">*/}
+            {/*    <img src={ContactUsIcons.EMAIL_LARGE} alt="email logo"/>*/}
+            {/*</a>*/}
+            {/*/!* facebook icon *!/*/}
+            {/*<a href="#" target="_blank" rel="noreferrer">*/}
+            {/*    <img src={ContactUsIcons.FACEBOOK_LARGE} alt="facebook logo"/>*/}
+            {/*</a>*/}
+            {/*/!* twitter icon *!/*/}
+            {/*<a href="#" target="_blank" rel="noreferrer">*/}
+            {/*    <img src={ContactUsIcons.TWITTER_LARGE} alt="twitter logo"/>*/}
+            {/*</a>*/}
+            {/*/!* instagram icon *!/*/}
+            {/*<a href="#" target="_blank" rel="noreferrer">*/}
+            {/*    <img src={ContactUsIcons.INSTAGRAM_LARGE} alt="instagram logo"/>*/}
+            {/*</a>*/}
         </span>
         </div>
     )
