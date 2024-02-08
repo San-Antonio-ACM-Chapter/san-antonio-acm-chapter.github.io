@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './styles.module.css';
 import {ContactUsIcons} from "../../tools/tools";
 
-const discordInviteURL = "https://discord.gg/MfBkbGhKH2";
+//const discordInviteURL = "https://discord.gg/MfBkbGhKH2";
+const discordInviteURL: string = "https://discord.gg/jg6E55rwQa";
 
 const ContactSection = () => {
     return (
