@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/san-antonio-acm-chapter.github.io/static/css/main.6108872c.css",
-    "main.js": "/san-antonio-acm-chapter.github.io/static/js/main.112e0bef.js",
-    "static/js/787.63bbb9bb.chunk.js": "/san-antonio-acm-chapter.github.io/static/js/787.63bbb9bb.chunk.js",
-    "static/media/Meetup_Logo.png": "/san-antonio-acm-chapter.github.io/static/media/Meetup_Logo.13a78f00b48ade4e6cb0.png",
-    "static/media/ACM_SA_Logo-1.svg": "/san-antonio-acm-chapter.github.io/static/media/ACM_SA_Logo-1.4da9647b74a8c0409d0297901fd5e572.svg",
-    "index.html": "/san-antonio-acm-chapter.github.io/index.html",
-    "main.6108872c.css.map": "/san-antonio-acm-chapter.github.io/static/css/main.6108872c.css.map",
-    "main.112e0bef.js.map": "/san-antonio-acm-chapter.github.io/static/js/main.112e0bef.js.map",
-    "787.63bbb9bb.chunk.js.map": "/san-antonio-acm-chapter.github.io/static/js/787.63bbb9bb.chunk.js.map"
+    "main.css": "/static/css/main.6108872c.css",
+    "main.js": "/static/js/main.ca7f1538.js",
+    "static/js/787.63bbb9bb.chunk.js": "/static/js/787.63bbb9bb.chunk.js",
+    "static/media/Meetup_Logo.png": "/static/media/Meetup_Logo.13a78f00b48ade4e6cb0.png",
+    "static/media/ACM_SA_Logo-1.svg": "/static/media/ACM_SA_Logo-1.4da9647b74a8c0409d0297901fd5e572.svg",
+    "index.html": "/index.html",
+    "main.6108872c.css.map": "/static/css/main.6108872c.css.map",
+    "main.ca7f1538.js.map": "/static/js/main.ca7f1538.js.map",
+    "787.63bbb9bb.chunk.js.map": "/static/js/787.63bbb9bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6108872c.css",
-    "static/js/main.112e0bef.js"
+    "static/js/main.ca7f1538.js"
   ]
 }
