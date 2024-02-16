@@ -1,0 +1,79 @@
+/* this css file is used to style the different color themes */
+
+/* Current Theme: Normal (default) */
+/* export colors for normal theme */
+:root {
+    --events-color: #0061C2;
+    --background-color: #08183F;
+    --secondary-color: #FFFFFF;
+    --about-us-color: #01091A;
+    --link-hover-color: #00b0ff;
+    --hover-card-color: #e8f4fc;
+}
+
+/* theme variants : 'default', 'bonus-stage', 'smooth-sailing', 'grapefruit', 'black-eye', 'mahogany' */
+
+.default {
+    --events-color: #0061C2;
+    --background-color: #08183F;
+    --secondary-color: #FFFFFF;
+    --about-us-color: #01091A;
+    --link-hover-color: #00b0ff;
+    --hover-card-color: #e8f4fc;
+}
+
+/* export colors for bonus-stage theme */
+
+.bonus-stage {
+    --events-color: #ffba49;
+    --background-color: #20a39e;
+    --secondary-color: #FFFFFF;
+    --about-us-color: #105653;
+    --link-hover-color: #ffba49;
+    --hover-card-color: #e8fcfa;
+}
+
+/* export colors for smooth-sailing theme */
+
+.smooth-sailing {
+    --events-color: #48a9a6;
+    --background-color: #4281a4;
+    --secondary-color: #FFFFFF;
+    --about-us-color: #234457;
+    --link-hover-color: #48a9a6;
+    --hover-card-color: #e8f8fc;
+}
+
+/* export colors for grapefruit theme */
+
+.grapefruit {
+    --events-color: #16302b;
+    --background-color: #694873;
+    --secondary-color: #FFFFFF;
+    --about-us-color: #8bcc80;
+    --link-hover-color: #ff6b6b;
+    --hover-card-color: #e5f1e5;
+}
+
+/* export colors for black-eye theme */
+
+.black-eye {
+    --events-color: #14213d;
+    --background-color: #000000;
+    --secondary-color: #FFFFFF;
+    --about-us-color: #220bb4;
+    --link-hover-color: #9925f7;
+    --hover-card-color: #ebe7ff;
+}
+
+/* export colors for mahogany theme */
+
+.mahogany {
+    --events-color: #93032e;
+    --background-color: #c69f89;
+    --secondary-color: #FFFFFF;
+    --about-us-color: #370617;
+    --link-hover-color: #93032e;
+    --hover-card-color: #f7e1d7;
+}
+

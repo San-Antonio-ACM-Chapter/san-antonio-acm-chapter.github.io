@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './styles.module.css';
 import {loremIpsum} from "../../tools/tools";
 
@@ -18,26 +18,85 @@ const loremIpsumSlicer = (loremIpsum: string) => {
     return loremIpsum.slice(startNumber,endNumber);
 }
 
+interface EventItem {
+    title: string;
+    date: string;
+    linkURL: string;
+    linkText: string;
+}
+
 const EventsSection = () => {
+    const EVENT_TEXT : string = "ACM San Antonio hosts a variety of events, from technical workshops to social gatherings. We are always looking for new ways to engage with our community. If you have an idea for an event, please reach out to us!";
+
+    const [eventItems, setEventItems] = React.useState([] as EventItem[]);
+
+    // @ts-ignore
+    React.useEffect(() => {
+        //TODO: eventually this needs to come from some sort of backend connection
+        console.log("hit");
+        setEventItems([
+            {
+                title: "What is a Software Engineer?",
+                date: "Feb 28th 2024 @ 6-8pm CST",
+                linkURL: "https://www.meetup.com/acmsa-devsa/",
+                linkText: "RSVP HERE!"
+            }
+        ])
+    }, [])
+
+
+    /**
+     * This function takes an array of event items and returns an array of Event components
+     * @param eventItems
+     */
+    const generateEventItems = (eventItems: EventItem[]) => {
+        return eventItems.map((eventItem: EventItem) => {
+            return (
+                <Event
+                    title={eventItem.title}
+                    date={eventItem.date}
+                    linkURL={eventItem.linkURL}
+                    linkText={eventItem.linkText}
+                />
+            )
+        })
+    }
+
     return (
         <div className={styles.container}>
             <h1 className={styles.containerHeader}>Events</h1>
-            <p className={styles.containerParagraph}><em>
-                The ACM of San Antonio hosts events to help you connect, learn, and grow. Our events are designed to help you expand your professional circle, master cutting-edge technologies, and learn about other options available to you on the market. Collaborate with others looking to build projects, practice mock interviews and much more!</em>
+            <p className={styles.containerParagraph}>
+                <em>{EVENT_TEXT}</em>
             </p>
             <div className={styles.upcomingEvents}>
                 <h2 className={styles.upcomingEventsHeader}>Upcoming Events</h2>
-                <div className={styles.event}>
-                    <h3>{loremIpsumSlicer(loremIpsum)}</h3>
-                    <p>{loremIpsum}</p>
-                </div>
-                <div className={styles.event}>
-                    <h3>{loremIpsumSlicer(loremIpsum)}</h3>
-                    <p>{loremIpsum}</p>
-                </div>
+                {generateEventItems(eventItems)}
             </div>
         </div>
     );
+}
+
+//event props
+interface EventProps {
+    title: string;
+    date: string;
+    linkURL: string;
+    linkText: string;
+}
+
+/**
+ * Event component
+ * @param props - an object containing the event's title, date, linkURL, and linkText
+ * @constructor - a component that displays an event's title, date, and a link to RSVP
+ */
+const Event = (props: EventProps) => {
+    return (
+        <div className={styles.event}>
+            <h3>{props.title}</h3>
+            <p>{props.date}</p>
+            <a href={props.linkURL}>{props.linkText}</a>
+        </div>
+    )
 }
 
 export default EventsSection;

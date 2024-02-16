@@ -1,5 +1,5 @@
 .container {
-    background-color: #01091a;
+    background-color: var(--about-us-color);
     padding: 30px;
     padding-top: 5px;
     align-content: center;

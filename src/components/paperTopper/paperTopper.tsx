@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import styles from './styles.module.css';
 import {loremIpsum as LoremIpsum} from "../../tools/tools";
+import BASIC_LOGO from "../../assets/icons-and-logos/ACM_SA_Logo-1.svg";
 
 interface PaperTopperProps {
     showNote: boolean;
@@ -47,17 +48,15 @@ const PaperTopper = (props: PaperTopperProps) => {
             {/* create a component that takes random images from some source online and fades them in and out */}
 
             <div className={styles.cardImageContainer}>
+                {/*TODO: insert the logo that was given to me by Zaq*/}
                 <img src={imageSources[imageIndex]}
                      className={styles.cardImage} alt={"randomImage"}/>
                 <div className={styles.cardImageCover}></div>
                 <h1 className={styles.cardTitle}>ACM San Antonio</h1>
             </div>
-
-
             {props.showNote ?
-                <div className={styles.noteContainer}>
-                    <p className={styles.noteText}>{LoremIpsum}</p>
-                </div> : null}
+                <img className={styles.noteContainer} src={BASIC_LOGO}  alt={"San Antonio ACM Chapter Logo"}/> : null
+            }
         </div>
     );
 }

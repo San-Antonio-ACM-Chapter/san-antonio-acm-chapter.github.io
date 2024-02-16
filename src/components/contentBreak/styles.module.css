@@ -1,6 +1,6 @@
 .contentBreakContainer {
     content : "";
-    background: #08183f;
+    background: var(--background-color);
     width: 100%;
     height: 70px;
     transition: 1s;

@@ -1,5 +1,5 @@
 .container {
-    background-color: #08183f;
+    background-color: var(--background-color);
     height: 80px;
     padding-top: 5px;
     align-content: center;
@@ -53,7 +53,7 @@
 }
 
 .link:hover {
-    color: #00b0ff; /* I really like this color */
+    color: var(--link-hover-color); /* I really like this color */
     font-weight: 100;
     transition: 1s;
 }

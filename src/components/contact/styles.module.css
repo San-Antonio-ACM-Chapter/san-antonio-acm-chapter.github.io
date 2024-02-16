@@ -27,6 +27,19 @@
     user-select: none;
 }
 
+.socialMediaContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    right: 40px;
+}
+
+.socialMediaContainer a {
+  margin: 10px;
+}
+
 .contactSection img {
     width: 50px;
     height: 50px;

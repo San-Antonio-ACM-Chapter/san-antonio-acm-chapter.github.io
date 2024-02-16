@@ -9,8 +9,16 @@ import ContentBreak from "./components/contentBreak/contentBreak";
 import AboutUsSection from "./components/aboutUs/aboutUs";
 import EventsSection from "./components/Events/eventsSection";
 import ContactSection from "./components/contact/contactSection";
+import {useTheme} from "./ThemeProvider";
+import styles from './themes.module.css';
 
 function App() {
+    const { theme, selectTheme } = useTheme();
+    console.log(`theme: ${theme}`);
+
+    const themeClassName = styles[theme]; //ai generated - GOOGLE MORE - what is going on here? why does this work?
+    console.log(`themeClassName: ${themeClassName}`);
+
     const imageSource = 'https://live.staticflickr.com/5517/12213224246_a9d49f83d8_b.jpg';
     const responseMessage = (response: any) => {
         console.log('success')
@@ -27,7 +35,7 @@ function App() {
     const handleShow = () => setShowModal(true);
     return (
         <>
-            <div className="App">
+            <div className={`App ${themeClassName}`}>
 
                     <style>
                         @import

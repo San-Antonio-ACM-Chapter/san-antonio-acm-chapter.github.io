@@ -9,7 +9,7 @@
 }
 
 .App {
-    background-color: #08183f;
+    background-color: var(--background-color);
     min-height: 100vh;
     transition: 1s;
 }
@@ -17,7 +17,7 @@
 /* media query for anything bigger than 1300px */
 @media (min-width: 1600px) {
     .App {
-        background-color: #08183f;
+        background-color: var(--background-color);
         transition: 1s;
     }
 }

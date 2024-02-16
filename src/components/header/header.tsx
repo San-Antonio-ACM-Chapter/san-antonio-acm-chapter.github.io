@@ -12,8 +12,7 @@ const Header = () => {
                     <NavigationLink href={"#home"} text={"Home"} />
                     <NavigationLink href={"#about"} text={"About"} />
                     <NavigationLink href={"#events"} text={"Events"} />
-                    <NavigationLink href={"#contact"} text={"Contact"} />
-                    <NavigationLink href={"#getInvolved"} text={"Get Involved"} />
+                    <NavigationLink href={"#contact"} text={"Connect"} />
                 </span>
             </span>
         </div>

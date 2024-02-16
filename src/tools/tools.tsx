@@ -1,3 +1,4 @@
+
 // this file is a series of tools and helper functions that exist that may need to be used elsewhere in the project
 
 // lorem ipsum is a string of text that is commonly used as a placeholder in web development
@@ -19,5 +20,5 @@ export enum ContactUsIcons {
     TWITTER = "https://img.icons8.com/color/48/000000/twitter.png",
     TWITTER_LARGE = "https://img.icons8.com/color/96/000000/twitter.png",
     INSTAGRAM = "https://img.icons8.com/color/48/000000/instagram-new.png",
-    INSTAGRAM_LARGE = "https://img.icons8.com/color/96/000000/instagram-new.png"
+    INSTAGRAM_LARGE = "https://img.icons8.com/color/96/000000/instagram-new.png",
 }
