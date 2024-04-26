@@ -1,161 +1,223 @@
 .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: var(--events-color);
-    width: 92%;
-    margin: 0 auto;
-    padding: 40px;
-    transition: 1s;
-    height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: var(--events-color);
+  width: 92%;
+  margin: 0 auto;
+  padding: 40px;
+  transition: 1s;
+  height: 400px;
 }
 
 .containerHeader {
-    font-family: Raleway, sans-serif;
-    font-size: 2.5rem;
-    color: white;
-    font-weight: lighter;
-    transition: 1s;
-    /* disable text selection */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  font-family: Raleway, sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: lighter;
+  transition: 1s;
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .containerParagraph {
-    font-family: Raleway, sans-serif;
-    font-size: 1.2rem;
-    color: white;
-    font-weight: lighter;
-    margin-top: 20px;
-    width: 50%;
-    transition: 1s;
-    /* disable text selection */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-
+  font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: lighter;
+  margin-top: 20px;
+  width: 50%;
+  transition: 1s;
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .upcomingEvents {
-    content: "";
-    position: absolute;
-    width: 30%;
-    left: 40px;
-    bottom: 0px;
-    background: white;
-    transition: 1s;
+  content: "";
+  position: absolute;
+  width: 30%;
+  left: 40px;
+  bottom: 0px;
+  background: white;
+  transition: 1s;
 }
 
 .upcomingEvents:hover {
-    width: 40%;
-    transition: 1s;
+  width: 40%;
+  transition: 1s;
 }
 
 .upcomingEventsHeader {
-    font-family: "EB Garamond", serif;
-    font-size: 1.7rem;
-    color: var(--events-color);
-    font-weight: 800;
-    margin: 20px;
+  font-family: "EB Garamond", serif;
+  font-size: 1.7rem;
+  color: var(--events-color);
+  font-weight: 800;
+  margin: 20px;
 }
 
-.event{
-    margin: 20px;
-    transition: 1s;
-    border-left: 5px solid var(--events-color);
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 25px;
-    max-height: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-end-overflow: ellipsis;
-    cursor: pointer;
+.event {
+  margin: 20px;
+  transition: 1s;
+  border-left: 5px solid var(--events-color);
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  max-height: 200px;
+  text-overflow: ellipsis;
+  text-end-overflow: ellipsis;
 }
 
 .event:hover {
-    background: var(--events-color);
-    transition: .5s;
+  background: var(--events-color);
+  transition: 0.5s;
 }
 
 .event h3 {
-    font-family: Raleway, serif;
-    font-size: 1.5rem;
-    color: var(--events-color);
-    transition: .5s;
-    overflow: hidden;
-    white-space: nowrap;
-    /* disable text selection */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  font-family: Raleway, serif;
+  font-size: 1.5rem;
+  color: var(--events-color);
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-.event:hover h3{
-    color: white;
-    transition: .5s;
-    overflow: hidden;
+.event:hover h3 {
+  color: white;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
-.event a{
-    font-family: Raleway, serif;
-    font-size: 1rem;
-    background-color: var(--events-color);
-    color: #fff;
-    padding: 10px;
-    font-weight: 400;
-    transition: .5s;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    /* disable text selection */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-    text-decoration: none;
+.event a {
+  font-family: Raleway, serif;
+  font-size: 1rem;
+  background-color: var(--events-color);
+  color: #fff;
+  padding: 10px;
+  font-weight: 400;
+  transition: 0.5s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  align-content: center;
+  line-height: 1.5em;
+  margin: 0.16em;
+  border: 1px solid var(--events-color);
+  box-shadow: var(--events-color);
+  box-sizing: content-box;
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  text-decoration: none;
 }
 
-.event:hover a{
-    color: var(--events-color);
-    transition: .5s;
-    background-color: #fff;
+.event:hover a {
+  color: var(--events-color);
+  transition: 0.5s;
+  background-color: #fff;
 }
 
 .event p {
-    font-family: Raleway, serif;
-    font-size: 1rem;
-    color: var(--events-color);
-    font-weight: 400;
-    transition: .5s;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  font-family: Raleway, serif;
+  font-size: 1rem;
+  color: var(--events-color);
+  font-weight: 400;
+  transition: 0.5s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
-    /* disable text selection */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-.event:hover p{
-    color: white;
-    transition: .5s;
+.event:hover p {
+  color: white;
+  transition: 0.5s;
+}
+
+.eventLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 0;
+}
+
+.addToCalendarButton {
+  padding: 0.7rem;
+  background-color: var(--secondary-color);
+  color: var(--events-color);
+}
+
+.addToCalendarButton:hover {
+  color: var(--events-color);
+  background-color: var(--about-us-color);
+}
+
+.addToCalendarMenu {
+  width: 80%;
+  background-color: transparent;
+}
+
+.addToCalendarItem:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--about-us-color) !important;
 }
