@@ -12,7 +12,7 @@ const EventsSection = () => {
 
   const [eventItems, setEventItems] = useState([] as EventItem[]);
   const timezone = 'America/Chicago'
-  
+
   useEffect(() => {
     //TODO: eventually this needs to come from some sort of backend connection
     console.log("hit");

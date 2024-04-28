@@ -203,13 +203,15 @@
 
 .addToCalendarButton {
   padding: 0.7rem;
-  background-color: var(--secondary-color);
-  color: var(--events-color);
+  background-color: var(--button-primary-color);
+  color: var(--secondary-color);
+  --bs-btn-border-color: var(--button-secondary-color);
+  --bs-btn-active-bg: var(--button-primary-color);
 }
 
 .addToCalendarButton:hover {
   color: var(--events-color);
-  background-color: var(--about-us-color);
+  background-color: var(--secondary-color);
 }
 
 .addToCalendarMenu {
@@ -219,5 +221,5 @@
 
 .addToCalendarItem:hover {
   color: var(--secondary-color) !important;
-  background-color: var(--about-us-color) !important;
+  background-color: var(--events-color) !important;
 }
