@@ -9,6 +9,7 @@
     --about-us-color: #01091A;
     --link-hover-color: #00b0ff;
     --hover-card-color: #e8f4fc;
+    --button-primary-color: #014385;
 }
 
 /* theme variants : 'default', 'bonus-stage', 'smooth-sailing', 'grapefruit', 'black-eye', 'mahogany' */
@@ -20,6 +21,7 @@
     --about-us-color: #01091A;
     --link-hover-color: #00b0ff;
     --hover-card-color: #e8f4fc;
+    --button-primary-color: #014385;
 }
 
 /* export colors for bonus-stage theme */
@@ -31,6 +33,7 @@
     --about-us-color: #105653;
     --link-hover-color: #ffba49;
     --hover-card-color: #e8fcfa;
+    --button-primary-color: #e79717;
 }
 
 /* export colors for smooth-sailing theme */
@@ -42,6 +45,7 @@
     --about-us-color: #234457;
     --link-hover-color: #48a9a6;
     --hover-card-color: #e8f8fc;
+    --button-primary-color: #23726f;
 }
 
 /* export colors for grapefruit theme */
@@ -53,6 +57,7 @@
     --about-us-color: #8bcc80;
     --link-hover-color: #ff6b6b;
     --hover-card-color: #e5f1e5;
+    --button-primary-color: #1b4940;
 }
 
 /* export colors for black-eye theme */
@@ -64,6 +69,7 @@
     --about-us-color: #220bb4;
     --link-hover-color: #9925f7;
     --hover-card-color: #ebe7ff;
+    --button-primary-color: #053086;
 }
 
 /* export colors for mahogany theme */
@@ -75,5 +81,6 @@
     --about-us-color: #370617;
     --link-hover-color: #93032e;
     --hover-card-color: #f7e1d7;
+    --button-primary-color: #610722;
 }
 
