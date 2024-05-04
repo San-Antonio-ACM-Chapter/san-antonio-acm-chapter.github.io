@@ -1,11 +1,10 @@
-import React from 'react';
 import styles from './styles.module.css';
 import { ContactUsIcons } from "../../tools/tools";
 import meetupLogo from "../../assets/icons-and-logos/Meetup_Logo.png";
 
 //const discordInviteURL = "https://discord.gg/MfBkbGhKH2";
 const discordInviteURL: string = "https://discord.gg/jg6E55rwQa";
-const meetupPageURL: string = "https://www.meetup.com/acmsa-devsa/";
+const meetupPageURL: string = "https://www.meetup.com/acm-sa/";
 
 const ContactSection = () => {
     return (

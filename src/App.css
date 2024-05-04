@@ -22,6 +22,12 @@ body {
     grid-template-columns: 1fr;
 }
 
+section#contact {
+    width: 100%;
+    margin: auto;
+    border-radius: 1rem;
+}
+
 /* media query for anything bigger than 1600 */
 @media (min-width: 1600px) {
     .App {
@@ -39,6 +45,12 @@ body {
     }
 }
 
+/*media query for anything bigger than 1300px*/
+@media (max-width: 1300px) {
+    section {
+        width: 65%;
+        margin: auto;
+        border-radius: 1rem;
+    }
 
-/* todo */
-@media only screen and (max-width: 768px) {}
+}

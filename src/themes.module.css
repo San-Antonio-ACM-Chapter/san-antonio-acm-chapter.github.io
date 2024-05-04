@@ -27,7 +27,7 @@
 /* export colors for bonus-stage theme */
 
 .bonus-stage {
-    --events-color: #ffba49;
+    --events-color: #dda03c;
     --background-color: #20a39e;
     --secondary-color: #FFFFFF;
     --about-us-color: #105653;
@@ -54,7 +54,7 @@
     --events-color: #16302b;
     --background-color: #694873;
     --secondary-color: #FFFFFF;
-    --about-us-color: #8bcc80;
+    --about-us-color: #7cbb72;
     --link-hover-color: #ff6b6b;
     --hover-card-color: #e5f1e5;
     --button-primary-color: #1b4940;
@@ -64,7 +64,7 @@
 
 .black-eye {
     --events-color: #14213d;
-    --background-color: #000000;
+    --background-color: #181717;
     --secondary-color: #FFFFFF;
     --about-us-color: #220bb4;
     --link-hover-color: #9925f7;

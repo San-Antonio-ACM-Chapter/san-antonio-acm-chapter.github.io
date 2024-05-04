@@ -7,7 +7,7 @@
   background-color: var(--events-color);
   width: 100%;
   margin: 0 auto;
-  padding: 5%;
+  padding: 5% 5% 0 5%;
   transition: 1s;
   height: 100%;
   border-radius: .5rem;
@@ -40,8 +40,7 @@
   color: white;
   font-weight: lighter;
   margin-top: 1rem;
-  width: 50%;
-  transition: 1s;
+  padding: 5%;
   /* disable text selection */
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -57,26 +56,28 @@
   /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-.upcomingEvents {
-  content: "";
-  position: absolute;
-  width: 30%;
-  left: 3rem;
-  bottom: 0rem;
-  background: white;
-  transition: 1s;
+.eventContent {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.upcomingEvents:hover {
-  width: 40%;
-  transition: 1s;
+.eventScrollable {
+  overflow: scroll;
+  height: 20rem;
+}
+
+.upcomingEvents {
+  background: white;
+  border-radius: .5rem .5rem 0 0;
+  width: 100%;
+  padding: 4% 5% 0 1%;
 }
 
 .upcomingEventsHeader {
-  font-family: "EB Garamond", serif;
-  font-size: 1.7rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--events-color);
-  font-weight: 800;
   margin: 1rem;
 }
 
@@ -84,14 +85,15 @@
   margin: 1rem;
   transition: 1s;
   border-left: 5px solid var(--events-color);
-  padding: 2% 2% 0 2%;
-  max-height: 20rem; /* todo change percent */
+  padding: 2%;
+  width: 90%;
   text-overflow: ellipsis;
 }
 
 .event:hover {
   background: var(--events-color);
   transition: 0.5s;
+  width: 100%;
 }
 
 .event h3 {
@@ -99,7 +101,7 @@
   font-size: 1.5rem;
   color: var(--events-color);
   transition: 0.5s;
-  overflow: hidden;
+  overflow: inherit;
   white-space: nowrap;
   /* disable text selection */
   -webkit-touch-callout: none;
@@ -119,7 +121,6 @@
 .event:hover h3 {
   color: white;
   transition: 0.5s;
-  overflow: hidden;
 }
 
 .event a {
@@ -127,7 +128,7 @@
   font-size: 1rem;
   background-color: var(--events-color);
   color: #fff;
-  padding: 3%;
+  padding: 2%;
   font-weight: 400;
   transition: 0.5s;
   white-space: nowrap;
@@ -160,6 +161,7 @@
   color: var(--events-color);
   transition: 0.5s;
   background-color: #fff;
+  padding: 2%;
 }
 
 .event p {
@@ -168,10 +170,7 @@
   color: var(--events-color);
   font-weight: 400;
   transition: 0.5s;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-
+  white-space: pre-wrap;
   /* disable text selection */
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -196,11 +195,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5% 0 0;
+  padding: 0 10% 0 0;
+  height: 20%;
 }
 
 .addToCalendarButton {
-  padding: 9%;
+  padding: 5%;
   background-color: var(--button-primary-color);
   color: var(--secondary-color);
   --bs-btn-border-color: var(--button-secondary-color);
@@ -220,4 +220,18 @@
 .addToCalendarItem:hover {
   color: var(--secondary-color) !important;
   background-color: var(--events-color) !important;
+}
+
+
+@media (max-width:1300px) {
+  .eventContent {
+    display: contents;
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .event h3 {
+    white-space: normal;
+  }
 }
