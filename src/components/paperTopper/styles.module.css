@@ -111,7 +111,7 @@ svg path:last-of-type {
     left: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .cardTitle {
         font-size: 3em;
         top: 14.85rem
