@@ -116,4 +116,9 @@ svg path:last-of-type {
         font-size: 3em;
         top: 14.85rem
     }
+
+    .noteContainer {
+        height: 80%;
+        bottom: 15%;
+    }
 }
