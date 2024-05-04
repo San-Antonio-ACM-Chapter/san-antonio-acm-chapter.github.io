@@ -63,7 +63,7 @@
 
 .eventScrollable {
   overflow: scroll;
-  height: 20rem;
+  height: 12rem;
 }
 
 .upcomingEvents {
@@ -227,11 +227,10 @@
   .eventContent {
     display: contents;
   }
-
-}
-
-@media (max-width: 1300px) {
   .event h3 {
     white-space: normal;
+  }
+  .eventScrollable {
+    height: 14rem;
   }
 }

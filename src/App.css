@@ -22,11 +22,10 @@ body {
     grid-template-columns: 1fr;
 }
 
-section#contact {
-    width: 100%;
-    margin: auto;
-    border-radius: 1rem;
+section#about {
+    width: 75%;
 }
+
 
 /* media query for anything bigger than 1600 */
 @media (min-width: 1600px) {
@@ -39,13 +38,13 @@ section#contact {
 /*media query for anything bigger than 1300px*/
 @media (min-width: 1300px) {
     section {
-        width: 75%;
+        width: 100%;
         margin: auto;
         border-radius: 1rem;
     }
 }
 
-/*media query for anything bigger than 1300px*/
+/*media query for anything smaller than 1300px*/
 @media (max-width: 1300px) {
     section {
         width: 75%;
@@ -53,4 +52,7 @@ section#contact {
         border-radius: 1rem;
     }
 
+    section#contact {
+        width: 100%;
+    }
 }
