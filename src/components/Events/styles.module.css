@@ -5,11 +5,12 @@
   align-items: flex-end;
   justify-content: center;
   background-color: var(--events-color);
-  width: 92%;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 5%;
   transition: 1s;
-  height: 400px;
+  height: 100%;
+  border-radius: .5rem;
 }
 
 .containerHeader {
@@ -38,7 +39,7 @@
   font-size: 1.2rem;
   color: white;
   font-weight: lighter;
-  margin-top: 20px;
+  margin-top: 1rem;
   width: 50%;
   transition: 1s;
   /* disable text selection */
@@ -60,8 +61,8 @@
   content: "";
   position: absolute;
   width: 30%;
-  left: 40px;
-  bottom: 0px;
+  left: 3rem;
+  bottom: 0rem;
   background: white;
   transition: 1s;
 }
@@ -76,19 +77,16 @@
   font-size: 1.7rem;
   color: var(--events-color);
   font-weight: 800;
-  margin: 20px;
+  margin: 1rem;
 }
 
 .event {
-  margin: 20px;
+  margin: 1rem;
   transition: 1s;
   border-left: 5px solid var(--events-color);
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 25px;
-  max-height: 200px;
+  padding: 2% 2% 0 2%;
+  max-height: 20rem; /* todo change percent */
   text-overflow: ellipsis;
-  text-end-overflow: ellipsis;
 }
 
 .event:hover {
@@ -129,7 +127,7 @@
   font-size: 1rem;
   background-color: var(--events-color);
   color: #fff;
-  padding: 10px;
+  padding: 3%;
   font-weight: 400;
   transition: 0.5s;
   white-space: nowrap;
@@ -198,11 +196,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem 0 0;
+  padding: 0 5% 0 0;
 }
 
 .addToCalendarButton {
-  padding: 0.7rem;
+  padding: 9%;
   background-color: var(--button-primary-color);
   color: var(--secondary-color);
   --bs-btn-border-color: var(--button-secondary-color);

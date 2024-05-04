@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import {ContactUsIcons} from "../../tools/tools";
+import { ContactUsIcons } from "../../tools/tools";
 import meetupLogo from "../../assets/icons-and-logos/Meetup_Logo.png";
 
 //const discordInviteURL = "https://discord.gg/MfBkbGhKH2";
@@ -14,7 +14,7 @@ const ContactSection = () => {
             <div className={styles.socialMediaContainer}>
                 {/* discord icon */}
                 <a href={discordInviteURL} target="_blank" rel="noreferrer">
-                    <img src={ContactUsIcons.DISCORD_LARGE} alt="discord logo"/>
+                    <img src={ContactUsIcons.DISCORD_LARGE} alt="discord logo" />
                 </a>
                 {/*/!* email icon *!/*/}
                 {/*<a href="#" target="_blank" rel="noreferrer">*/}
@@ -33,7 +33,7 @@ const ContactSection = () => {
                 {/*    <img src={ContactUsIcons.INSTAGRAM_LARGE} alt="instagram logo"/>*/}
                 {/*</a>*/}
                 <a href={meetupPageURL} target="_blank" rel="noreferrer">
-                    <img src={meetupLogo} alt="meetup logo"/>
+                    <img src={meetupLogo} alt="meetup logo" />
                 </a>
             </div>
         </div>
