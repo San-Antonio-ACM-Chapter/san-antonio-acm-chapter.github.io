@@ -48,7 +48,7 @@ section#contact {
 /*media query for anything bigger than 1300px*/
 @media (max-width: 1300px) {
     section {
-        width: 65%;
+        width: 75%;
         margin: auto;
         border-radius: 1rem;
     }
