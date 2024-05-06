@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import { loremIpsum } from "../../tools/tools";
 
-import { AddToCalendar, formatEventDate } from "./helper";
+import { AddToCalendar, formatEventDate, getUpcomingEvents } from "./helper";
 import { fromZonedTime } from "date-fns-tz"
 import { EventCardProps, EventItem } from "./types";
 
@@ -13,20 +13,32 @@ const EventsSection = () => {
   const [eventItems, setEventItems] = useState([] as EventItem[]);
   const timezone = 'America/Chicago'
 
+  const initialEventItems = [
+    {
+      title: "What is a Software Engineer?",
+      date: {
+        startDate: fromZonedTime(new Date(2024, 1, 28, 18), timezone),   // Feb 28 2024 at 6pm
+        endDate: fromZonedTime(new Date(2024, 1, 28, 20), timezone)      // Feb 28 2024 at 8pm 
+      },
+      linkURL: "https://www.meetup.com/acm-sa/events/299230919/",
+      linkText: "RSVP",
+    },
+    {
+      title: "Intermediate React Native Workshop",
+      date: {
+        startDate: fromZonedTime(new Date(2024, 3, 24, 18), timezone),  // Apr 24 2024 at 6pm
+        endDate: fromZonedTime(new Date(2024, 3, 24, 20), timezone)     // Apr 24 2024 at 8pm 
+      },
+      linkURL: "https://www.meetup.com/acm-sa/events/300140253/",
+      linkText: "RSVP",
+    },
+  ];
+
+
   useEffect(() => {
     //TODO: eventually this needs to come from some sort of backend connection
     console.log("hit");
-    setEventItems([
-      {
-        title: "What is a Software Engineer?",
-        date: {
-          startDate: fromZonedTime(new Date(2024, 1, 28, 18), timezone), // Feb 28 2024 at 6pm
-          endDate: fromZonedTime(new Date(2024, 1, 28, 20), timezone) // Feb 28 2024 at 8pm 
-        },
-        linkURL: "https://www.meetup.com/acmsa-devsa/",
-        linkText: "RSVP HERE!",
-      },
-    ]);
+    setEventItems(initialEventItems);
   }, []);
 
   /**
@@ -46,15 +58,27 @@ const EventsSection = () => {
     });
   };
 
+  const upcomingEvents = getUpcomingEvents(eventItems)
+  const eventsTitle = upcomingEvents.length > 0 ? `Upcoming Events` : `Previous Events`             // based on filtered events list, set title 
+  const eventList: EventItem[] = eventsTitle === "Previous Events" ? eventItems : upcomingEvents    // based on title, return correct events list, upcoming events or all previous events
+  eventList.sort((a, b) => b.date.endDate.getTime() - a.date.endDate.getTime());                    // Sort the eventList array by the end date in descending order (most recent date first)
+
+
   return (
     <div className={styles.container}>
       <h1 className={styles.containerHeader}>Events</h1>
-      <p className={styles.containerParagraph}>
-        <em>{EVENT_TEXT}</em>
-      </p>
-      <div className={styles.upcomingEvents}>
-        <h2 className={styles.upcomingEventsHeader}>Upcoming Events</h2>
-        {generateEventItems(eventItems)}
+      <div className={styles.eventContent}>
+        <p className={styles.containerParagraph}>
+          <em>{EVENT_TEXT}</em>
+        </p>
+        <div className={styles.upcomingEvents}>
+          <h2 className={styles.upcomingEventsHeader}>
+            {eventsTitle}
+          </h2>
+          <div className={styles.eventScrollable}>
+            {generateEventItems(eventList)}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,18 @@ import { format } from "date-fns";
 import { ButtonGroup, Dropdown } from "react-bootstrap";
 import { google, outlook, office365, yahoo, ics } from "calendar-link";
 import styles from "./styles.module.css";
-import { EventCardProps } from "./types";
+import { EventCardProps, EventItem } from "./types";
+
+/**
+ * Filter events based on whether they have happened relative to today 
+ * @param {EventItem[]} eventList - list of all time events.
+ * @returns An array of upcoming events.
+ */
+export const getUpcomingEvents = (eventList: EventItem[]): EventItem[] => {
+    const currentDate = new Date();
+    return eventList.filter(event => event.date.endDate > currentDate);
+  }
+
 
 /**
  * Formats the event date range with time zone indication.

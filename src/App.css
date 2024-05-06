@@ -1,10 +1,15 @@
-* {
+body {
     margin: 0;
     padding: 0;
+    width: fit-content;
     box-sizing: border-box;
     /*hide the scrollbars*/
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+* {
+    scrollbar-width: none;
 
 }
 
@@ -12,12 +17,42 @@
     background-color: var(--background-color);
     min-height: 100vh;
     transition: 1s;
+    padding: 2% 5%;
+    display: inline-grid;
+    grid-template-columns: 1fr;
 }
 
-/* media query for anything bigger than 1300px */
+section#about {
+    width: 75%;
+}
+
+
+/* media query for anything bigger than 1600 */
 @media (min-width: 1600px) {
     .App {
         background-color: var(--background-color);
         transition: 1s;
+    }
+}
+
+/*media query for anything bigger than 1300px*/
+@media (min-width: 1300px) {
+    section {
+        width: 100%;
+        margin: auto;
+        border-radius: 1rem;
+    }
+}
+
+/*media query for anything smaller than 1300px*/
+@media (max-width: 1300px) {
+    section {
+        width: 75%;
+        margin: auto;
+        border-radius: 1rem;
+    }
+
+    section#contact {
+        width: 100%;
     }
 }

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import styles from './styles.module.css';
 import {loremIpsum as LoremIpsum} from "../../tools/tools";
 import BASIC_LOGO from "../../assets/icons-and-logos/ACM_SA_Logo-1.svg";
+import { ReactComponent as Logo } from "../../assets/icons-and-logos/ACM_SA_Logo.svg";
 
 interface PaperTopperProps {
     showNote: boolean;
@@ -55,7 +56,7 @@ const PaperTopper = (props: PaperTopperProps) => {
                 <h1 className={styles.cardTitle}>ACM San Antonio</h1>
             </div>
             {props.showNote ?
-                <img className={styles.noteContainer} src={BASIC_LOGO}  alt={"San Antonio ACM Chapter Logo"}/> : null
+                <div className={styles.noteContainer} aria-lable={"San Antonio ACM Chapter Logo"}><Logo/> </div> : null
             }
         </div>
     );
