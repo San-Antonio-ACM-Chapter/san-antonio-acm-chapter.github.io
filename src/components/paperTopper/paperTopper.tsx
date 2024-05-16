@@ -56,7 +56,7 @@ const PaperTopper = (props: PaperTopperProps) => {
                 <h1 className={styles.cardTitle}>ACM San Antonio</h1>
             </div>
             {props.showNote ?
-                <div className={styles.noteContainer} aria-lable={"San Antonio ACM Chapter Logo"}><Logo/> </div> : null
+                <div className={styles.noteContainer} role="banner" aria-label={"San Antonio ACM Chapter Logo"}><Logo/> </div> : null
             }
         </div>
     );
