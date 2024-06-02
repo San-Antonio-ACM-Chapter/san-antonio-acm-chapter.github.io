@@ -126,8 +126,8 @@
 .event a {
   font-family: Raleway, serif;
   font-size: 1rem;
-  background-color: var(--events-color);
-  color: #fff;
+  background-color: var(--button-primary-color);
+  color: var(--secondary-color);
   padding: 2%;
   font-weight: 400;
   transition: 0.5s;
@@ -138,7 +138,6 @@
   align-content: center;
   line-height: 1.5em;
   margin: 0.16em;
-  border: 1px solid var(--events-color);
   box-shadow: var(--events-color);
   box-sizing: content-box;
   /* disable text selection */
@@ -160,8 +159,8 @@
 .event:hover a {
   color: var(--events-color);
   transition: 0.5s;
-  background-color: #fff;
   padding: 2%;
+  background-color: var(--secondary-color);
 }
 
 .event p {
@@ -213,7 +212,7 @@
 }
 
 .addToCalendarMenu {
-  width: 80%;
+  width: 93%;
   background-color: transparent;
 }
 

@@ -27,13 +27,13 @@
 /* export colors for bonus-stage theme */
 
 .bonus-stage {
-    --events-color: #ffba49;
+    --events-color: #E79717;
     --background-color: #20a39e;
     --secondary-color: #FFFFFF;
     --about-us-color: #105653;
     --link-hover-color: #ffba49;
     --hover-card-color: #e8fcfa;
-    --button-primary-color: #e79717;
+    --button-primary-color: #d1850c;
 }
 
 /* export colors for smooth-sailing theme */

@@ -22,8 +22,8 @@ body {
     grid-template-columns: 1fr;
 }
 
-section#about {
-    width: 75%;
+section#contact {
+    width: 100%;
 }
 
 
@@ -38,7 +38,7 @@ section#about {
 /*media query for anything bigger than 1300px*/
 @media (min-width: 1300px) {
     section {
-        width: 100%;
+        width: 75%;
         margin: auto;
         border-radius: 1rem;
     }
