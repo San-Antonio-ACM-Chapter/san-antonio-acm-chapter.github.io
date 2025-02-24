@@ -10,7 +10,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --cname acmsa.org"
   },
   "dependencies": {
     "@react-oauth/google": "^0.12.1",
@@ -51,6 +51,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }
