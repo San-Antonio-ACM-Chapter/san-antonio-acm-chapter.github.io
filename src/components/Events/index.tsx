@@ -73,16 +73,14 @@ const Events = () => {
         </p>
         <div className={styles.upcomingEvents}>
           <h2 className={styles.upcomingEventsHeader}>
-            {eventsTitle}
+            Upcoming Events
           </h2>
           <div>
             <iframe
               src="https://lu.ma/embed/calendar/cal-Cq7Sb2LfXZLQf20/events?compact=true&lt=light"
-              width="600"
-              height="450"
               aria-hidden="false"
               title="Luma ACM San Antonio Calendar"
-              style={{ border: "solid white" }}
+              className={styles.lumaCalendar}
             ></iframe>
           </div>
         </div>

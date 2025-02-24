@@ -221,6 +221,10 @@
   background-color: var(--events-color) !important;
 }
 
+.lumaCalendar {
+  min-width: 300px;
+  min-height: 400px;
+}
 
 @media (max-width:1300px) {
   .eventContent {
