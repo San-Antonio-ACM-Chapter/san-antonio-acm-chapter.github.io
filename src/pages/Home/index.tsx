@@ -1,6 +1,6 @@
-import { Contact, ContentBreak, Events, LeftPanel, SectionWrapper, Topper } from "../../components";
+import { Contact, ContentBreak, Events, LeftPanel, SectionWrapper, StripeBuyButton, Topper } from "../../components";
 import { sections } from "../../utils/Constants";
-import "./styles.module.css";
+import styles from "./styles.module.css";
 
 const Home = () => {
   return (
@@ -22,7 +22,14 @@ const Home = () => {
       </SectionWrapper>
 
       <SectionWrapper id={"membership"}>
-          <LeftPanel title={'Membership'}/>
+          <LeftPanel title={'Membership'} content={
+              <>
+                <p>{sections?.membership?.text}</p>
+                <div className={styles.buyButtonContainer}>
+                  <StripeBuyButton />
+                </div>
+              </>
+          }/>
       </SectionWrapper>
 
       <SectionWrapper id={"contact"}>

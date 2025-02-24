@@ -7,6 +7,14 @@ import { Home } from './pages';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            ['stripe-buy-button']: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+        }
+    }
+}
+
 function App() {
     const { theme, selectTheme } = useTheme();
     console.log(`theme: ${theme}`);
