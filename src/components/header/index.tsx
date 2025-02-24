@@ -6,12 +6,12 @@ const Header = () => {
         <div className={styles.container}>
             <span className={styles.spanContainer}>
                 <h2 className={styles.headerMainText}>
-                    ACM San Antonio
+                    <NavigationLink href={"#home"} text={"ACM San Antonio"} />
                 </h2>
                 <span className={styles.linkContainer}>
-                    <NavigationLink href={"#home"} text={"Home"} />
                     <NavigationLink href={"#about"} text={"About"} />
                     <NavigationLink href={"#events"} text={"Events"} />
+                    <NavigationLink href={"#membership"} text={"Membership"} />
                     <NavigationLink href={"#contact"} text={"Connect"} />
                 </span>
             </span>
@@ -20,4 +20,3 @@ const Header = () => {
 }
 
 export default Header;
-

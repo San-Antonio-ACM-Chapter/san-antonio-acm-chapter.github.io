@@ -6,7 +6,7 @@ import meetupLogo from "../../assets/icons-and-logos/Meetup_Logo.png";
 const discordInviteURL: string = "https://discord.gg/jg6E55rwQa";
 const meetupPageURL: string = "https://www.meetup.com/acm-sa/";
 
-const ContactSection = () => {
+const Contact = () => {
     return (
         <div className={styles.contactSection}>
             <h1>Connect With Us</h1>
@@ -39,4 +39,4 @@ const ContactSection = () => {
     )
 }
 
-export default ContactSection;
+export default Contact;

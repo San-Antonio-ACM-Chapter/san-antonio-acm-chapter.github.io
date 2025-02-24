@@ -6,7 +6,7 @@ import { AddToCalendar, formatEventDate, getUpcomingEvents } from "./helper";
 import { fromZonedTime } from "date-fns-tz"
 import { EventCardProps, EventItem } from "./types";
 
-const EventsSection = () => {
+const Events = () => {
   const EVENT_TEXT: string =
     "ACM San Antonio hosts a variety of events, from technical workshops to social gatherings. We are always looking for new ways to engage with our community. If you have an idea for an event, please reach out to us!";
 
@@ -110,7 +110,7 @@ const EventCard = (props: EventCardProps) => {
   );
 };
 
-export default EventsSection;
+export default Events;
 
 
 

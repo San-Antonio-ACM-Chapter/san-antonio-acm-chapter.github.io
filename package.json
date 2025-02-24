@@ -1,7 +1,8 @@
 {
   "name": "san-antonio-acm-website",
-  "homepage": "https://san-antonio-acm-chapter.github.io/",
-  "version": "0.1.0",
+  "homepage": "https://acmsa.org",
+  "description": "Landing page for the ACM San Antonio Chapter website.",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
