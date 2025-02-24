@@ -9,10 +9,11 @@ export const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing el
     " officia deserunt mollit anim id est laborum.";
 
 
-//contact us icon enums as urls using omg-img URLS
+// contact us icon enums as urls using omg-img URLS
+// https://icons8.com/icons/styles
 export enum ContactUsIcons {
     DISCORD = "https://img.icons8.com/color/48/000000/discord-logo.png",
-    DISCORD_LARGE = "https://img.icons8.com/color/96/000000/discord-logo.png",
+    DISCORD_LARGE = "https://img.icons8.com/?size=100&id=30998&format=png&color=000000",
     EMAIL = "https://img.icons8.com/color/48/000000/gmail.png",
     EMAIL_LARGE = "https://img.icons8.com/color/96/000000/gmail.png",
     FACEBOOK = "https://img.icons8.com/color/48/000000/facebook.png",
@@ -21,4 +22,5 @@ export enum ContactUsIcons {
     TWITTER_LARGE = "https://img.icons8.com/color/96/000000/twitter.png",
     INSTAGRAM = "https://img.icons8.com/color/48/000000/instagram-new.png",
     INSTAGRAM_LARGE = "https://img.icons8.com/color/96/000000/instagram-new.png",
+    LINKEDIN = "https://img.icons8.com/color/96/000000/linkedin.png",
 }

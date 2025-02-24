@@ -4,18 +4,18 @@ import {loremIpsum as LoremIpsum} from "../../tools/tools";
 import BASIC_LOGO from "../../assets/icons-and-logos/ACM_SA_Logo-1.svg";
 import { ReactComponent as Logo } from "../../assets/icons-and-logos/ACM_SA_Logo.svg";
 
-interface PaperTopperProps {
+interface TopperProps {
     showNote: boolean;
     backgroundColor?: string;
     height?: number;
 }
 
 /**
- * PaperTopper component
+ * Topper component
  * @description - this new component will look like a card laying on top of the blue background
  * @constructor
  */
-const PaperTopper = (props: PaperTopperProps) => {
+const Topper = (props: TopperProps) => {
 
     let imageIndex: number = 0;
 
@@ -62,5 +62,5 @@ const PaperTopper = (props: PaperTopperProps) => {
     );
 }
 
-export default PaperTopper;
+export default Topper;
 

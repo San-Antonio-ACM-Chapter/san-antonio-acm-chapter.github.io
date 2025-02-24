@@ -28,3 +28,5 @@ src/env/client*
 
 /src/env/*
 /src/env/client*
+
+.env

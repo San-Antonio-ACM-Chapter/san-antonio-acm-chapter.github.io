@@ -6,7 +6,7 @@ import { AddToCalendar, formatEventDate, getUpcomingEvents } from "./helper";
 import { fromZonedTime } from "date-fns-tz"
 import { EventCardProps, EventItem } from "./types";
 
-const EventsSection = () => {
+const Events = () => {
   const EVENT_TEXT: string =
     "ACM San Antonio hosts a variety of events, from technical workshops to social gatherings. We are always looking for new ways to engage with our community. If you have an idea for an event, please reach out to us!";
 
@@ -73,10 +73,15 @@ const EventsSection = () => {
         </p>
         <div className={styles.upcomingEvents}>
           <h2 className={styles.upcomingEventsHeader}>
-            {eventsTitle}
+            Upcoming Events
           </h2>
-          <div className={styles.eventScrollable}>
-            {generateEventItems(eventList)}
+          <div>
+            <iframe
+              src="https://lu.ma/embed/calendar/cal-Cq7Sb2LfXZLQf20/events?compact=true&lt=light"
+              aria-hidden="false"
+              title="Luma ACM San Antonio Calendar"
+              className={styles.lumaCalendar}
+            ></iframe>
           </div>
         </div>
       </div>
@@ -103,7 +108,7 @@ const EventCard = (props: EventCardProps) => {
   );
 };
 
-export default EventsSection;
+export default Events;
 
 
 
