@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e31d9e0.css",
-    "main.js": "/static/js/main.c01279b5.js",
+    "main.css": "/static/css/main.6d59046a.css",
+    "main.js": "/static/js/main.ccdaa7bf.js",
     "static/js/787.63bbb9bb.chunk.js": "/static/js/787.63bbb9bb.chunk.js",
     "static/media/Meetup_Logo.png": "/static/media/Meetup_Logo.13a78f00b48ade4e6cb0.png",
-    "static/media/ACM_SA_Logo.svg": "/static/media/ACM_SA_Logo.c53c33da842f4cd746ef81cfd16f427c.svg",
+    "static/media/ACM_SA_Logo.svg": "/static/media/ACM_SA_Logo.ce77f193578e22a54a8cb6884adc9d35.svg",
     "index.html": "/index.html",
-    "main.6e31d9e0.css.map": "/static/css/main.6e31d9e0.css.map",
-    "main.c01279b5.js.map": "/static/js/main.c01279b5.js.map",
+    "main.6d59046a.css.map": "/static/css/main.6d59046a.css.map",
+    "main.ccdaa7bf.js.map": "/static/js/main.ccdaa7bf.js.map",
     "787.63bbb9bb.chunk.js.map": "/static/js/787.63bbb9bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e31d9e0.css",
-    "static/js/main.c01279b5.js"
+    "static/css/main.6d59046a.css",
+    "static/js/main.ccdaa7bf.js"
   ]
 }
