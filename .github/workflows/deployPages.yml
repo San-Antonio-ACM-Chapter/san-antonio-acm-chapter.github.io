@@ -21,6 +21,8 @@ jobs:
           npm -v
           npm ci
           npm run build
+        env:
+          CI: ""
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
