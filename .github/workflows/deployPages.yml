@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - 'feature/**' # remove before PR completion
 
 jobs:
   deploy:
@@ -21,7 +20,7 @@ jobs:
           npm -v
           npm ci
           npm run build
-        env:
+        env: # remove after we cleanup typescript changes
           CI: ""
 
       - name: Deploy 🚀
