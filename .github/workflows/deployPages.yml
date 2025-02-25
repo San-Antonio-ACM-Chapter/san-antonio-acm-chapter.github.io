@@ -1,28 +1,30 @@
 name: Deploy to GitHub Pages
-
+permissions:
+  contents: write
 on:
   push:
-    branches: 
-      - 'feature/**' # change to "main" before PR completion
+    branches:
+      - main
+      - 'feature/**' # remove before PR completion
 
 jobs:
-  build:
-    name: Deploy
+  deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-    steps: 
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20.x'
-    
-    - name: Install dependencies
-      run: |
-        node -v
-        npm install
-
-    - name: Deploy
-      run: npm run deploy
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          clean: true
+          clean-exclude: |
+            special-file.txt
+            some/*.txt
