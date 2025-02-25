@@ -1,6 +1,6 @@
-import React from 'react';
 import styles from './styles.module.css';
 import NavigationLink from './navigationLink';
+
 const Header = () => {
     return (
         <div className={styles.container}>
