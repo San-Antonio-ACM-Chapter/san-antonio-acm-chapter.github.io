@@ -26,5 +26,4 @@ jobs:
           folder: build
           clean: true
           clean-exclude: |
-            special-file.txt
-            some/*.txt
+            CNAME
