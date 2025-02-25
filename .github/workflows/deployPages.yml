@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: 
-      - 'feature/**'
+      - 'feature/**' # change to "main" before PR completion
 
 jobs:
   build:
@@ -12,10 +12,10 @@ jobs:
 
     steps: 
     - name: Checkout repository
-      uses: actions/checkout@v1.0.0
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v1.2.0
+      uses: actions/setup-node@v4
       with:
         node-version: '20.x'
     
