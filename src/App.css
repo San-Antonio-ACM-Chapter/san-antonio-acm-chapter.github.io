@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: fit-content;
+    /* width: fit-content; */
     box-sizing: border-box;
     /*hide the scrollbars*/
     scrollbar-width: none;
@@ -15,9 +15,11 @@ body {
 
 .App {
     background-color: var(--background-color);
+    /* background-color: green; */
     min-height: 100vh;
     transition: 1s;
-    padding: 2% 5%;
+    /* margin: 1rem 2rem; */
+    /* padding: 2% 5%; */
     display: inline-grid;
     grid-template-columns: 1fr;
 }
@@ -31,12 +33,16 @@ section#contact {
 @media (min-width: 1600px) {
     .App {
         background-color: var(--background-color);
+        /* background-color: orange; */
         transition: 1s;
     }
 }
 
 /*media query for anything bigger than 1300px*/
 @media (min-width: 1300px) {
+    .App {
+        /* background-color: pink; */
+    }
     section {
         width: 75%;
         margin: auto;
@@ -46,8 +52,12 @@ section#contact {
 
 /*media query for anything smaller than 1300px*/
 @media (max-width: 1300px) {
+    .App {
+        width: 100vw;
+        /* background-color: purple; */
+    }
     section {
-        width: 75%;
+        /* width: 75%; */
         margin: auto;
         border-radius: 1rem;
     }

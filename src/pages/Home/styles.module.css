@@ -1,3 +1,8 @@
+.mainContainer {
+  width: 100vw;
+  padding: 1rem 2rem;
+}
+
 .buyButtonContainer {
   display: flex;
   justify-content: center;

@@ -2,19 +2,11 @@
     background-color: var(--background-color);
     align-content: center;
     transition: 1s;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
+    padding: 2rem;
 }
 
-/* media query for anything bigger than 1300px */
-@media (min-width: 1600px) {
-    .container {
-        width: 66%;
-        transition: 1s;
-        margin-left: 17%;
-        margin-right: 17%;
-    }
-}
-
+/* DESKTOP STYLES */
 .spanContainer {
     display: flex;
     flex-direction: row;
@@ -36,7 +28,7 @@
     justify-content: space-between;
 }
 
-.link{
+.link {
     color: white;
     font-weight: 100;
     font-family: Raleway, sans-serif;
@@ -51,4 +43,63 @@
     color: var(--link-hover-color); /* I really like this color */
     font-weight: 100;
     transition: 1s;
+}
+
+/* MOBILE STYLES */
+.mobileLinkContainer {
+    display: none;
+    cursor: pointer;
+}
+
+.icon {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+    /* margin-right: 1.5rem; */
+    padding: 0.5rem;
+    transition: 1s;
+    align-self: center;
+    text-decoration: none;
+}
+
+.mobileLinks {
+    transition: 1s;
+    flex-direction: column;
+    align-items: right;
+}
+
+.mobileLinks .link {
+    padding: 1rem;
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    border-radius: 20px;
+}
+
+/* media query for anything bigger than 1300px */
+@media (min-width: 1600px) {
+    .container {
+        width: 66%;
+        transition: 1s;
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+}
+
+@media (max-width: 850px) {
+    .linkContainer {
+        display: none;
+    }
+    .mobileLinkContainer {
+        display: flex;
+    }
+    .headerMainText {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 851px) {
+    .mobileLinks {
+        display: none;
+    }
 }
