@@ -111,18 +111,6 @@
     left: 0;
 }
 
-/* @media only screen and (max-width: 900px) {
-    .cardTitle {
-        font-size: 3em;
-        top: 14.85rem
-    }
-
-    .noteContainer {
-        height: 80%;
-        bottom: 15%;
-    }
-} */
-
 @media (max-width: 850px) {
     .cardTitle {
         font-size: 2rem;
