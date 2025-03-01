@@ -1,5 +1,5 @@
-import Contact from "./contact";
-import ContentBreak from "./contentBreak";
+import Contact from "./Contact";
+import ContentBreak from "./ContentBreak";
 import Events from "./Events";
 import Header from "./Header";
 import LeftPanel from "./LeftPanel";
