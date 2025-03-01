@@ -1,4 +1,4 @@
-import ContentBreak from "../contentBreak";
+import ContentBreak from "../ContentBreak";
 
 interface SectionProps {
   id: string

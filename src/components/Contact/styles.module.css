@@ -62,8 +62,22 @@
     margin: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .contactSection h1 {
         font-size: 2rem;
+    }
+} */
+
+@media (max-width: 850px) {
+    .contactSection h1 {
+        font-size: 1.5rem;
+        padding: 1rem 1rem
+    }
+    .contactSection {
+        flex-direction: column;
+    }
+    .socialMediaContainer {
+        flex-direction: row;
+        width: 320px;
     }
 }

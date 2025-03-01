@@ -46,12 +46,12 @@ const Topper = (props: TopperProps) => {
 
     return (
         <div className={styles.cardContainer} style={{backgroundColor: props.backgroundColor}}>
-            {/* create a component that takes random images from some source online and fades them in and out */}
-
             <div className={styles.cardImageContainer}>
-                {/*TODO: insert the logo that was given to me by Zaq*/}
-                <img src={imageSources[imageIndex]}
-                     className={styles.cardImage} alt={"randomImage"}/>
+                <img
+                    src={imageSources[imageIndex]}
+                    className={styles.cardImage}
+                    alt={"randomImage"}
+                />
                 <div className={styles.cardImageCover}></div>
                 <h1 className={styles.cardTitle}>ACM San Antonio</h1>
             </div>

@@ -16,15 +16,15 @@
     }
 }
 
-svg {
+.cardContainer svg {
     height: 100%;
 }
 
-svg path:nth-last-of-type(2) {
+.cardContainer svg path:nth-last-of-type(2) {
     fill: var(--about-us-color);
 }
 
-svg path:last-of-type {
+.cardContainer svg path:last-of-type {
     fill: var(--background-color);
 }
 
@@ -111,14 +111,12 @@ svg path:last-of-type {
     left: 0;
 }
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 850px) {
     .cardTitle {
-        font-size: 3em;
-        top: 14.85rem
+        font-size: 2rem;
     }
-
     .noteContainer {
-        height: 80%;
-        bottom: 15%;
+        height: 50%;
+        bottom: 40%;
     }
 }

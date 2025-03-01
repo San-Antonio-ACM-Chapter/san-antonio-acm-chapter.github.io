@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const Home = () => {
   return (
-    <>
+    <main className={styles.mainContainer}>
       {/* --- start of new component --- */}
       {/* description: this new component will look like a card laying on top of the blue background */}
       {/* it will be solid white, with a black drop shadow, like a piece of paper sitting on top of the blue background */}
@@ -38,7 +38,7 @@ const Home = () => {
 
       {/* TODO: create get involved component */}
       {/* TODO: create sponsors component*/}
-    </>
+    </main>
   )
 }
 
