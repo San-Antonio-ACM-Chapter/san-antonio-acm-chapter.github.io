@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header';
+import { Header } from './components';
 import { useTheme } from "./ThemeProvider";
 import styles from './themes.module.css';
 import { Home } from './pages';
