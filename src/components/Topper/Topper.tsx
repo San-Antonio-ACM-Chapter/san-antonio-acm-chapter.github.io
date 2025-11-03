@@ -56,7 +56,9 @@ const Topper = (props: TopperProps) => {
                 <h1 className={styles.cardTitle}>ACM San Antonio</h1>
             </div>
             {props.showNote ?
-                <div className={styles.noteContainer} role="banner" aria-label={"San Antonio ACM Chapter Logo"}><Logo/> </div> : null
+                <div className={styles.noteContainer} role="banner" aria-label={"San Antonio ACM Chapter Logo"} data-testid={'topper-logo'}>
+                    <Logo/>
+                </div> : null
             }
         </div>
     );

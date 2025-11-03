@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <span
+      class="spanContainer"
+    >
+      <h2
+        class="headerMainText"
+      >
+        <a
+          class="link"
+          href="#home"
+        >
+          ACM San Antonio
+        </a>
+      </h2>
+      <span
+        class="linkContainer"
+      >
+        <a
+          class="link"
+          href="#about"
+        >
+          About
+        </a>
+        <a
+          class="link"
+          href="#events"
+        >
+          Events
+        </a>
+        <a
+          class="link"
+          href="#membership"
+        >
+          Membership
+        </a>
+        <a
+          class="link"
+          href="#connect"
+        >
+          Connect
+        </a>
+      </span>
+      <span
+        class="mobileLinkContainer"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-bars fa-lg icon"
+          data-icon="bars"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+    </span>
+    <div
+      class="mobileLinks closed"
+    >
+      <a
+        class="link"
+        href="#about"
+      >
+        About
+      </a>
+      <a
+        class="link"
+        href="#events"
+      >
+        Events
+      </a>
+      <a
+        class="link"
+        href="#membership"
+      >
+        Membership
+      </a>
+      <a
+        class="link"
+        href="#connect"
+      >
+        Connect
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,6 +1,6 @@
 // Code Written By: Jonathan Gene Tigner
 import React, { AnchorHTMLAttributes, ClassAttributes } from 'react';
-import styles from './styles.module.css';
+import styles from '../styles.module.css';
 
 interface NavigationLinkProps {
     href: string;

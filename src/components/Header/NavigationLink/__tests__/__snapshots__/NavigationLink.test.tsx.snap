@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationLink Component should match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="link"
+    href="#test"
+  >
+    Test Link
+  </a>
+</DocumentFragment>
+`;
