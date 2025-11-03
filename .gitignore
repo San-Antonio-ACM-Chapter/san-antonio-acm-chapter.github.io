@@ -30,3 +30,7 @@ src/env/client*
 /src/env/client*
 
 .env
+
+#ide
+.vscode/
+.idea/
