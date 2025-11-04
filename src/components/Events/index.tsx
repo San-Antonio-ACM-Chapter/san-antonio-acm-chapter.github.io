@@ -109,22 +109,3 @@ const EventCard = (props: EventCardProps) => {
 };
 
 export default Events;
-
-
-
-
-/**
- * This function takes a string and slices it at two random points, returning the sliced string
- * @param loremIpsum - a string of lorem ipsum text
- */
-const loremIpsumSlicer = (loremIpsum: string) => {
-  //grab two random numbers based on the length of the loremIpsum string
-  const randomNumberOne = Math.floor(Math.random() * loremIpsum.length);
-  const randomNumberTwo = Math.floor(Math.random() * loremIpsum.length);
-
-  //use the random numbers to slice the loremIpsum string, using the smaller number as the start and the larger number as the end
-  const startNumber = Math.min(randomNumberOne, randomNumberTwo);
-  const endNumber = Math.max(randomNumberOne, randomNumberTwo);
-
-  return loremIpsum.slice(startNumber, endNumber);
-};

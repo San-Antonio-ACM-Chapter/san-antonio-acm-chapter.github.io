@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddToCalendar Component should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="dropdown btn-group"
+    role="group"
+  >
+    <button
+      aria-expanded="false"
+      class="addToCalendarButton dropdown-toggle btn btn-primary"
+      id="react-aria-:r0:"
+      type="button"
+    >
+      Add to Calendar
+    </button>
+  </div>
+</DocumentFragment>
+`;

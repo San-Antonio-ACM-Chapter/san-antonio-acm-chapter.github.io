@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topper Component should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="cardContainer"
+  >
+    <div
+      class="cardImageContainer"
+    >
+      <img
+        alt="randomImage"
+        class="cardImage"
+        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/san-antonio-texas-cityscape-black-and-white-gregory-ballos.jpg"
+      />
+      <div
+        class="cardImageCover"
+      />
+      <h1
+        class="cardTitle"
+      >
+        ACM San Antonio
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;

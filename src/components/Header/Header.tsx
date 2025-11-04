@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import NavigationLink from './navigationLink';
+import NavigationLink from './NavigationLink/NavigationLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react';
@@ -20,8 +20,9 @@ const Header = () => {
     }, [width])
 
     // Links for desktop and mobile navigation
-    const navigationLinks = navigationItems.map((link) =>
+    const navigationLinks = navigationItems.map((link,index) =>
         <NavigationLink
+            key={link+index.toString()}
             otherAttributes={{ onClick: () => setMobileMenu(false)}}
             href={`#${link.toLowerCase()}`}
             text={link}
